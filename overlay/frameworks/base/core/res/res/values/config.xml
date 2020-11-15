@@ -308,19 +308,13 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 0, 0
-        H 48
-        V 48
-        H 0
-        L 0, 0
-        @dp
-        @left
-    </string>
+    <!-- Width slightly reduced from OP stock measurement, since somehow Android 10 adds another unnecessary padding -->
+    <!-- <string translatable="false" name="config_mainBuiltInDisplayCutout">M -540,0 L -407,0 L -407,102.5 L -540,102.5 Z</string> -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -540,0 L -425,0 L -425,102.5 L -540,102.5 Z</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">48dp</dimen>
-    <dimen name="status_bar_height_landscape">48dp</dimen>
+    <dimen name="status_bar_height_portrait">133.0px</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
 
     <!-- The default peak refresh rate for a given device. -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
